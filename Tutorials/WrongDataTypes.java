@@ -1,4 +1,5 @@
 // the below varaibles have the wrong datatypes. Fix them!
+// Complite the code first to see the runtime errors
 public class WrongDataTypes {
 	public static void main(String[] args) {
 		String year = 2001;
