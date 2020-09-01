@@ -37,6 +37,12 @@ public class StoreMethods {
     price = newPrice;
   }
 
+  // toString Method
+  // This is a common way to print out the details of an object instead of the Store89013890
+  public String toString(){
+    return "This store sells " + productType + " at a price of " + price + ".";
+  }
+
   // main method
   public static void main(String[] args) {
     StoreMethods lemonadeStand = new StoreMethods("Lemonade", 3.75);
@@ -48,5 +54,6 @@ public class StoreMethods {
     double lemonadePrice = lemonadeStand.getPriceWithTax();
     // prints the price with tax
     System.out.println(lemonadePrice);
+    System.out.println(lemonadeStand);
   }
 }
