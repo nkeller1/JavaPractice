@@ -7,13 +7,23 @@ public class StoreMethods {
     productType = product;
     price = initialPrice;
   }
-
-  // advertise method
-  // public means other classes can access the method
-  // void means there is no specific output from the method.
+  /*
+  advertise method
+  public means other classes can access the method
+  The void keyword (which means “completely empty”) indicates to the method
+  that no value is returned after calling that method.
+  */
   public void advertise(){
     System.out.println("Come spend some money!");
     System.out.println("Selling " + productType + "!");
+  }
+
+  // getPriceWithTax Method
+  // instead of using void you can use any datatype.
+  public double getPriceWithTax(){
+    double totalPrice = price + price * 0.08;
+    // need an explicit return statement
+    return totalPrice;
   }
 
   // greet customer method
@@ -34,5 +44,9 @@ public class StoreMethods {
     lemonadeStand.greetCustomer("Nathan");
     lemonadeStand.increasePrice(1.5);
     System.out.println(lemonadeStand.price);
+    // sets the price with tax
+    double lemonadePrice = lemonadeStand.getPriceWithTax();
+    // prints the price with tax
+    System.out.println(lemonadePrice);
   }
 }
