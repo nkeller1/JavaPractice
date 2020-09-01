@@ -8,9 +8,13 @@ public class StoreMethods {
   }
 
   // advertise method
-
-  // main method
   // public means other classes can access the method
+  // void means there is no specific output from the method. 
+  public void advertise(){
+    System.out.println("Come spend some money!");
+    System.out.println("Selling " + productType + "!");
+  }
+  // main method
   public static void main(String[] args) {
 
   }
