@@ -22,13 +22,26 @@ public class Order {
     }
 
     public double calculateShipping() {
-        if (shipping.equals("Regular")){
-            return 0;
-        } else if (shipping.equals("Express")){
-            return 1.75;
-        } else {
-            return .50;
+        double shippingCost;
+        switch (shipping) {
+            case "Regular":
+                shippingCost = 0;
+                break;
+            case "Express":
+                shippingCost = 1.75;
+                break;
+            default:
+                shippingCost = .50;
+                break;
         }
+        return shippingCost;
+//        if (shipping.equals("Regular")){
+//            return 0;
+//        } else if (shipping.equals("Express") {
+//            return 1.75;
+//        } else {
+//            return .50;
+//        }
     }
 
     public static void main(String[] args) {
