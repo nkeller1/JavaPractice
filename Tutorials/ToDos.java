@@ -23,14 +23,14 @@ class ToDos {
         poirotsToDos.add("call all suspects together");
         poirotsToDos.add("reveal the truth of the crime");
 
-        // Set each to-do below:
-        sherlocksToDos.set(1, "listen to Dr. Watson for amusement");
-        poirotsToDos.set(3, "listen to Captain Hastings for amusement");
+        // Remove each to-do below:
+        sherlocksToDos.remove(0);
+        // the index placement changes as soon as remove is called.
+        sherlocksToDos.remove(0);
+        poirotsToDos.remove(0);
 
 
-        System.out.println("Sherlock's to-do list:");
         System.out.println(sherlocksToDos.toString() + "\n");
-        System.out.println("Poirot's to-do list:");
         System.out.println(poirotsToDos.toString());
     }
 
